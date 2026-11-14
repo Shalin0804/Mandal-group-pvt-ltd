@@ -28,12 +28,12 @@ export default function About() {
               </p>
             </div>
           </div>
-          <img src={images.about} alt="Construction planning on site" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-sm object-cover" />
+          <img src={images.about} alt="Construction planning on site" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-sm object-cover ring-1 ring-copper/30" />
         </div>
       </section>
 
       {/* Vision & Mission */}
-      <section className="section bg-sand">
+      <section className="section bg-coal">
         <div className="container-x grid gap-6 md:grid-cols-2">
           <ServiceCard icon={Eye} title="Our Vision" text="To be a trusted name in residential construction, known for homes that stand the test of time and for the relationships we build with every client." />
           <ServiceCard icon={Target} title="Our Mission" text="To deliver well-planned, well-built homes through quality materials, skilled workmanship, transparent processes and timely execution." />
@@ -51,7 +51,7 @@ export default function About() {
       </section>
 
       {/* Why choose */}
-      <section className="section bg-sand">
+      <section className="section bg-coal">
         <div className="container-x">
           <SectionHeading eyebrow="Why Choose Us" title="Why families choose our construction group" />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

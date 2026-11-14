@@ -28,7 +28,7 @@ export default function Projects() {
         </div>
       </section>
 
-      <section className="section bg-sand">
+      <section className="section bg-coal">
         <div className="container-x">
           <SectionHeading eyebrow="Residential Projects" title="Homes built with care" text="Every project reflects our focus on quality, practical design and dependable execution." />
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

@@ -2,7 +2,7 @@ import { MapPin } from 'lucide-react'
 
 export default function ProjectCard({ name, location, image, description, status }) {
   return (
-    <article className="group overflow-hidden rounded-sm bg-white shadow-sm ring-1 ring-gray-100 transition-shadow duration-300 hover:shadow-xl">
+    <article className="group overflow-hidden card transition duration-300 hover:border-copper/60 hover:shadow-xl hover:shadow-black/40">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
           src={image}
@@ -13,7 +13,7 @@ export default function ProjectCard({ name, location, image, description, status
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {status && (
-          <span className="absolute left-4 top-4 rounded-sm bg-white/95 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-charcoal">
+          <span className="absolute left-4 top-4 rounded-sm border border-copper/50 bg-night/85 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-gold">
             {status}
           </span>
         )}

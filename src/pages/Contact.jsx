@@ -39,43 +39,43 @@ export default function Contact() {
             <ul className="mt-8 space-y-6">
               {details.map(({ icon: Icon, label, value, href }) => (
                 <li key={label} className="flex gap-4">
-                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-sm bg-sand text-gold"><Icon size={22} /></span>
+                  <span className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-sm border border-copper/30 bg-copper/10 text-gold"><Icon size={22} /></span>
                   <div className="min-w-0">
-                    <p className="text-sm font-semibold uppercase tracking-wider text-charcoal">{label}</p>
+                    <p className="text-sm font-semibold uppercase tracking-wider text-white">{label}</p>
                     {href ? <a href={href} className="break-all hover:text-gold">{value}</a> : <p>{value}</p>}
                   </div>
                 </li>
               ))}
             </ul>
 
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn mt-8 w-full bg-[#25D366] text-white hover:bg-[#1ebe5a] sm:w-auto">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="btn mt-8 w-full bg-[#25D366] text-night hover:bg-[#1ebe5a] sm:w-auto">
               <MessageCircle size={20} /> Chat on WhatsApp
             </a>
           </div>
 
-          <form onSubmit={handleSubmit} className="rounded-sm bg-sand p-6 sm:p-10">
+          <form onSubmit={handleSubmit} className="card p-6 sm:p-10">
             <h2 className="text-3xl">Send us a message</h2>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
-              <label className="block text-sm font-semibold text-charcoal">
+              <label className="block text-sm font-semibold text-white">
                 Full Name *
                 <input name="name" required minLength={2} autoComplete="name" className="input mt-2 font-normal" />
               </label>
-              <label className="block text-sm font-semibold text-charcoal">
+              <label className="block text-sm font-semibold text-white">
                 Phone Number *
                 <input name="phone" type="tel" required pattern="[0-9+\-\s]{10,15}" title="Enter a valid phone number (10–15 digits)" autoComplete="tel" className="input mt-2 font-normal" />
               </label>
-              <label className="block text-sm font-semibold text-charcoal sm:col-span-2">
+              <label className="block text-sm font-semibold text-white sm:col-span-2">
                 Email Address
                 <input name="email" type="email" autoComplete="email" className="input mt-2 font-normal" />
               </label>
-              <label className="block text-sm font-semibold text-charcoal sm:col-span-2">
+              <label className="block text-sm font-semibold text-white sm:col-span-2">
                 Message *
                 <textarea name="message" required minLength={10} rows={5} className="input mt-2 resize-y font-normal" placeholder="Tell us about your plot, location and requirements" />
               </label>
             </div>
             <button type="submit" className="btn-gold mt-6 w-full sm:w-auto"><Send size={18} /> Send Message</button>
             {sent && (
-              <p role="status" className="mt-4 text-sm text-charcoal">
+              <p role="status" className="mt-4 text-sm text-soft">
                 Your email app should open with your message. If it didn't, email us at <a href={`mailto:${site.email}`} className="font-semibold text-gold">{site.email}</a>.
               </p>
             )}

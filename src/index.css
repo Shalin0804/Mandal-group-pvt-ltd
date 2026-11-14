@@ -1,11 +1,15 @@
 @import 'tailwindcss';
 
+/* Brand palette — taken from the copper/bronze logo */
 @theme {
-  --color-charcoal: #1f2326;
-  --color-ink: #3d4246;
-  --color-gold: #a8834f;
-  --color-gold-dark: #8c6a3c;
-  --color-sand: #f7f4ef;
+  --color-night: #100b0a;  /* deep black — main background */
+  --color-coal: #191311;   /* dark charcoal — alternate sections, cards */
+  --color-umber: #241713;  /* dark brown — highlight sections */
+  --color-copper: #b9673f; /* borders, icons, button gradient */
+  --color-bronze: #a95632;
+  --color-gold: #d6a15d;   /* accent text (passes AA on all three backgrounds) */
+  --color-soft: #c7bdb7;   /* body text */
+  --color-muted: #a99a91;  /* secondary text */
   --font-sans: 'Manrope', system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --animate-fade: fade 0.5s ease-out both;
@@ -17,19 +21,21 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
-  body { @apply bg-white font-sans text-ink antialiased; }
-  h1, h2, h3 { @apply font-serif font-semibold text-charcoal; }
+  html { scroll-behavior: smooth; color-scheme: dark; }
+  body { @apply bg-night font-sans text-soft antialiased; }
+  h1, h2, h3 { @apply font-serif font-semibold text-white; }
 }
 
 @utility container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
-@utility section { @apply py-16 md:py-24; }
-@utility btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-6 text-sm font-semibold tracking-wide transition-colors duration-200; }
-@utility btn-gold { @apply btn bg-gold text-white hover:bg-gold-dark; }
-@utility btn-outline { @apply btn border border-white/70 text-white hover:bg-white hover:text-charcoal; }
-@utility btn-dark { @apply btn bg-charcoal text-white hover:bg-black; }
+@utility section { @apply border-t border-copper/15 py-16 md:py-24; }
+@utility btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-6 text-sm font-semibold tracking-wide transition duration-200; }
+/* Dark text on copper/gold: white on copper is only 4.1:1, dark is 4.7–8.5:1 */
+@utility btn-gold { @apply btn bg-gradient-to-r from-copper to-gold text-night shadow-lg shadow-copper/10 hover:brightness-110; }
+@utility btn-outline { @apply btn border border-copper text-white hover:border-gold hover:bg-copper/15; }
+@utility btn-dark { @apply btn border border-copper/60 bg-umber text-white hover:border-gold hover:text-gold; }
 @utility eyebrow { @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold; }
-@utility input { @apply w-full rounded-sm border border-gray-300 bg-white px-4 py-3 text-charcoal outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/30; }
+@utility card { @apply rounded-sm border border-copper/20 bg-umber/50; }
+@utility input { @apply w-full rounded-sm border border-copper/30 bg-night px-4 py-3 text-white outline-none transition placeholder:text-muted focus:border-gold focus:ring-2 focus:ring-gold/30; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

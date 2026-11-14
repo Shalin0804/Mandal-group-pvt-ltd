@@ -19,3 +19,6 @@ React 19 + Vite 8, Tailwind CSS v4 (`@tailwindcss/vite`, theme in `src/index.css
 - Do not invent company history, years, certifications or project counts.
 - Map embed renders only when `site.mapEmbedUrl` is set.
 - Custom classes (`btn-gold`, `container-x`, `section`, …) are Tailwind `@utility` blocks in `src/index.css`.
+- **Dark theme only — client forbids white backgrounds anywhere.** Use the brand tokens in `src/index.css`: `night` / `coal` / `umber` backgrounds, `copper` borders and icons, `gold` accent text, `soft` / `muted` body text.
+- Buttons on copper/gold use dark text (`text-night`); white on copper fails WCAG AA.
+- Logo: `src/assets/logo.webp` (transparent, cut from the client's logo photo). Replace with an official PNG/SVG when the client sends one.

@@ -1,10 +1,10 @@
 export default function PageBanner({ title, subtitle, image }) {
   return (
-    <section className="relative flex min-h-72 items-center bg-charcoal md:min-h-96">
-      <img src={image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-40" />
+    <section className="relative flex min-h-72 items-center bg-night md:min-h-96">
+      <img src={image} alt="" className="absolute inset-0 h-full w-full object-cover opacity-30" />
       <div className="container-x relative py-16 text-center">
         <h1 className="text-4xl text-white md:text-6xl">{title}</h1>
-        {subtitle && <p className="mx-auto mt-4 max-w-2xl text-base text-gray-200 md:text-lg">{subtitle}</p>}
+        {subtitle && <p className="mx-auto mt-4 max-w-2xl text-base text-soft md:text-lg">{subtitle}</p>}
       </div>
     </section>
   )

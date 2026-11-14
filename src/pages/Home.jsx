@@ -13,16 +13,16 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative flex min-h-[calc(100svh-5rem)] items-center bg-charcoal">
+      <section className="relative flex min-h-[calc(100svh-5rem)] items-center bg-night">
         <img src={images.hero} alt="Modern residential home exterior" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover opacity-50" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-night/90 via-night/50 to-transparent" />
         <div className="container-x relative py-20">
           <div className="max-w-3xl">
             <p className="eyebrow">{site.name} — {site.tagline}</p>
             <h1 className="mt-4 text-5xl leading-[1.05] text-white sm:text-6xl lg:text-7xl">
               Building Dreams, Creating Better Living Spaces.
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-gray-200 md:text-lg">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-soft md:text-lg">
               We turn your vision of a perfect home into reality through quality construction, thoughtful design and reliable execution.
             </p>
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -36,14 +36,14 @@ export default function Home() {
       {/* Intro */}
       <section className="section">
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
-          <img src={images.about} alt="Architectural plans and construction tools" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-sm object-cover" />
+          <img src={images.about} alt="Architectural plans and construction tools" loading="lazy" width="1000" height="750" className="aspect-[4/3] w-full rounded-sm object-cover ring-1 ring-copper/30" />
           <div>
             <SectionHeading center={false} eyebrow="Who We Are" title="Your partner in building a better home" />
             <p className="-mt-6 leading-relaxed">
               {site.name} is a residential construction company focused on building homes that are strong, functional and beautiful.
               We work closely with every family to understand their needs, plan carefully and deliver with quality at every stage.
             </p>
-            <Link to="/about" className="mt-8 inline-flex items-center gap-2 font-semibold text-gold hover:text-gold-dark">
+            <Link to="/about" className="mt-8 inline-flex items-center gap-2 font-semibold text-gold hover:text-white">
               Learn more about us <ArrowRight size={18} />
             </Link>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section className="section bg-sand">
+      <section className="section bg-coal">
         <div className="container-x">
           <SectionHeading eyebrow="Our Services" title="What we do" text="Complete residential construction services, from the first plan to the final finish." />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
 
       {/* Why choose us */}
-      <section className="section bg-sand">
+      <section className="section bg-coal">
         <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:items-center">
           <div>
             <SectionHeading center={false} eyebrow="Why Choose Us" title="Built on trust, delivered with care" />

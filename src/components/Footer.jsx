@@ -5,10 +5,10 @@ import { Logo, links } from './Navbar'
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-gray-400">
+    <footer className="border-t border-copper/30 bg-coal text-muted">
       <div className="container-x grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
-          <Logo light />
+          <Logo />
           <p className="text-sm leading-relaxed">
             Building quality homes through thoughtful design and reliable execution.
           </p>
@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-white/10">
+      <div className="border-t border-copper/20">
         <p className="container-x py-6 text-center text-xs">
           © {new Date().getFullYear()} {site.legalName}. All rights reserved.
         </p>
