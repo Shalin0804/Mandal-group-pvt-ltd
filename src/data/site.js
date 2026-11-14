@@ -1,0 +1,70 @@
+// All client content lives here. Replace placeholders with real details.
+import { Home, KeyRound, PencilRuler, Hammer, Paintbrush, ClipboardCheck, ShieldCheck, Eye, CalendarClock, Users, Handshake, Award, HardHat, MessagesSquare } from 'lucide-react'
+
+
+// Unsplash placeholder images. To use your own photos, drop them in
+// src/assets/images/, import them here and pass the import instead of img().
+const img = (id, w = 1200) =>
+  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=70`
+
+export const site = {
+  name: 'Mandal Group',
+  legalName: 'Mandal Group Pvt. Ltd.',
+  tagline: 'Residential Construction',
+  phone: '+91 00000 00000', // TODO: client phone
+  email: 'info@example.com', // TODO: client email
+  whatsapp: '910000000000', // TODO: country code + number, digits only
+  address: 'Office address to be updated', // TODO: client address
+  // Paste the Google Maps embed URL (Share > Embed a map > src) once the address is final.
+  mapEmbedUrl: '',
+}
+
+export const images = {
+  hero: img('1600596542815-ffad4c1539a9', 1920),
+  about: img('1503387762-592deb58ef4e', 1000),
+  aboutBanner: img('1541888946425-d81bb19240f5', 1920),
+  projectsBanner: img('1600585154340-be6161a56a0c', 1920),
+  contactBanner: img('1600607687939-ce8a6c25118c', 1920),
+}
+
+export const services = [
+  { icon: Home, title: 'Residential Construction', text: 'Independent homes and villas built with sound structure, quality materials and careful workmanship.' },
+  { icon: KeyRound, title: 'Turnkey Home Projects', text: 'One team handling your home from planning and approvals to construction and final handover.' },
+  { icon: PencilRuler, title: 'Planning & Design', text: 'Practical layouts and elevations that make the best use of your plot, budget and lifestyle.' },
+  { icon: Hammer, title: 'Renovation & Extension', text: 'Upgrades, additional floors and remodelling of existing homes with minimal disruption.' },
+  { icon: Paintbrush, title: 'Interior Finishing', text: 'Flooring, painting, carpentry and finishing work that gives your home a complete look.' },
+  { icon: ClipboardCheck, title: 'Project Management', text: 'Clear schedules, regular site updates and quality checks at every stage of the build.' },
+]
+
+export const reasons = [
+  { icon: ShieldCheck, title: 'Quality Materials', text: 'We use reliable, tested materials suited to long-lasting residential construction.' },
+  { icon: Eye, title: 'Transparent Process', text: 'Clear estimates, honest communication and no hidden surprises along the way.' },
+  { icon: CalendarClock, title: 'Timely Execution', text: 'Planned schedules and disciplined site management to keep your project on track.' },
+  { icon: Users, title: 'Client-First Approach', text: 'Your requirements guide every decision, from the first drawing to final handover.' },
+]
+
+export const values = [
+  { icon: Handshake, title: 'Integrity', text: 'Honest advice, fair pricing and commitments we keep.' },
+  { icon: Award, title: 'Quality', text: 'Attention to detail in every foundation, wall and finish.' },
+  { icon: HardHat, title: 'Safety', text: 'Safe sites and safe homes for workers and families alike.' },
+  { icon: MessagesSquare, title: 'Communication', text: 'Regular updates so you always know where your project stands.' },
+]
+
+// Sample projects — replace with real ones. `status` is optional; omit it to hide the badge.
+export const projects = [
+  { name: 'Contemporary Family Villa', location: 'City, State', image: img('1613490493576-7fde63acd811', 900), description: 'A two-storey villa with open living spaces, large windows and a landscaped front lawn.', status: 'Completed' },
+  { name: 'Modern Duplex Residence', location: 'City, State', image: img('1600585154340-be6161a56a0c', 900), description: 'Clean architectural lines, a double-height living area and efficient use of natural light.', status: 'Ongoing' },
+  { name: 'Garden View Home', location: 'City, State', image: img('1564013799919-ab600027ffc6', 900), description: 'A family home designed around outdoor living, with a private garden and relaxed interiors.' },
+  { name: 'Classic Bungalow', location: 'City, State', image: img('1570129477492-45c003edd2be', 900), description: 'A single-level bungalow combining traditional charm with modern comfort and planning.' },
+  { name: 'Urban Townhouse', location: 'City, State', image: img('1580587771525-78b9dba3b914', 900), description: 'A compact multi-level townhouse that maximises space on a city plot.' },
+  { name: 'Hillside Residence', location: 'City, State', image: img('1512917774080-9991f1c4c750', 900), description: 'A premium residence with spacious terraces and wide views of its surroundings.' },
+]
+
+export const gallery = [
+  { src: img('1600607687939-ce8a6c25118c', 800), alt: 'Bright modern living room interior' },
+  { src: img('1600566753190-17f0baa2a6c3', 800), alt: 'Modern home exterior with timber cladding' },
+  { src: img('1541888946425-d81bb19240f5', 800), alt: 'Construction team inspecting a building site' },
+  { src: img('1605276374104-dee2a0ed3cd6', 800), alt: 'Brick family home with double garage' },
+  { src: img('1504307651254-35680f356dfd', 800), alt: 'Workers fixing steel reinforcement on site' },
+  { src: img('1576941089067-2de3c901e126', 800), alt: 'White family home with a front garden' },
+]

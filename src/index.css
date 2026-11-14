@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-charcoal: #1f2326;
+  --color-ink: #3d4246;
+  --color-gold: #a8834f;
+  --color-gold-dark: #8c6a3c;
+  --color-sand: #f7f4ef;
+  --font-sans: 'Manrope', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --animate-fade: fade 0.5s ease-out both;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white font-sans text-ink antialiased; }
+  h1, h2, h3 { @apply font-serif font-semibold text-charcoal; }
+}
+
+@utility container-x { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+@utility section { @apply py-16 md:py-24; }
+@utility btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-sm px-6 text-sm font-semibold tracking-wide transition-colors duration-200; }
+@utility btn-gold { @apply btn bg-gold text-white hover:bg-gold-dark; }
+@utility btn-outline { @apply btn border border-white/70 text-white hover:bg-white hover:text-charcoal; }
+@utility btn-dark { @apply btn bg-charcoal text-white hover:bg-black; }
+@utility eyebrow { @apply text-xs font-semibold uppercase tracking-[0.2em] text-gold; }
+@utility input { @apply w-full rounded-sm border border-gray-300 bg-white px-4 py-3 text-charcoal outline-none transition focus:border-gold focus:ring-2 focus:ring-gold/30; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
