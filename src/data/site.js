@@ -1,5 +1,5 @@
 // All client content lives here. Replace placeholders with real details.
-import { GraduationCap, BriefcaseBusiness, Building2, Droplets, ShieldCheck, Eye, CalendarClock, Users, Handshake, Award, HardHat, MessagesSquare } from 'lucide-react'
+import { GraduationCap, BriefcaseBusiness, Droplets, ShieldCheck, Eye, CalendarClock, Users, Handshake, Award, HardHat, MessagesSquare } from 'lucide-react'
 
 
 // Unsplash placeholder images. To use your own photos, drop them in
@@ -15,7 +15,7 @@ export const site = {
   phone: '+91 99320 08273',
   email: 'mandalgroupstv0826@gmail.com',
   whatsapp: '919932008273', // country code + number, digits only
-  address: 'C/O Narayan Shinde, At Post Songaon, Jawali, Satara – 415514, Maharashtra',
+  address: 'At Post Songaon, Jawali, Satara – 415514, Maharashtra',
   // Keyless Google Maps embed. For an exact pin, replace with the src from Google Maps > Share > Embed a map.
   mapEmbedUrl: 'https://maps.google.com/maps?q=' + encodeURIComponent('Songaon, Jawali, Satara, Maharashtra 415514') + '&z=13&output=embed',
 }
@@ -46,14 +46,6 @@ export const services = [
     details: 'We connect trained and skilled workers with employers and projects that need them, helping workers find steady employment and helping projects find reliable manpower.',
     image: img('1541888946425-d81bb19240f5', 900),
     alt: 'Team of construction workers at a project site',
-  },
-  {
-    icon: Building2,
-    title: 'Rural and Urban Development',
-    text: 'Development work that improves infrastructure and living conditions in villages and cities.',
-    details: 'We take up development work in both rural and urban areas, contributing to better infrastructure, facilities and living conditions for the communities we serve.',
-    image: img('1477959858617-67f85cf4f1df', 900),
-    alt: 'Aerial view of a developed city',
   },
   {
     icon: Droplets,

@@ -54,7 +54,7 @@ export default function Home() {
       <section className="section bg-coal">
         <div className="container-x">
           <SectionHeading eyebrow="Our Services" title="What we do" text={site.motto} />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-3">
             {services.map((s) => <ServiceCard key={s.title} {...s} />)}
           </div>
           <div className="mt-12 text-center">

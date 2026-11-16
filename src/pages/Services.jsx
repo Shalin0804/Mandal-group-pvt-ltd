@@ -4,7 +4,7 @@ import ContactCTA from '../components/ContactCTA'
 import useMeta from '../useMeta'
 
 export default function Services() {
-  useMeta('Our Services', `${site.name} offers skills development, skilled labour placements, rural and urban development, and water purification and supply.`)
+  useMeta('Our Services', `${site.name} offers skills development, skilled labour placements, and water purification and supply.`)
 
   return (
     <>
