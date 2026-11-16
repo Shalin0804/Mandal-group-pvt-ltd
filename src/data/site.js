@@ -15,9 +15,9 @@ export const site = {
   phone: '+91 99320 08273',
   email: 'mandalgroupstv0826@gmail.com',
   whatsapp: '919932008273', // country code + number, digits only
-  address: 'Office address to be updated', // TODO: client address
-  // Paste the Google Maps embed URL (Share > Embed a map > src) once the address is final.
-  mapEmbedUrl: '',
+  address: 'C/O Narayan Shinde, At Post Songaon, Jawali, Satara – 415514, Maharashtra',
+  // Keyless Google Maps embed. For an exact pin, replace with the src from Google Maps > Share > Embed a map.
+  mapEmbedUrl: 'https://maps.google.com/maps?q=' + encodeURIComponent('Songaon, Jawali, Satara, Maharashtra 415514') + '&z=13&output=embed',
 }
 
 export const images = {
