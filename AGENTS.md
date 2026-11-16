@@ -14,7 +14,7 @@ React 19 + Vite 8, Tailwind CSS v4 (`@tailwindcss/vite`, theme in `src/index.css
 
 ## Rules
 - Client budget is small (₹3,000): keep it simple, no new dependencies, minimal animation.
-- Exactly 4 pages: Home, About, Projects, Contact (`src/pages/`).
+- 5 pages: Home, About, Services, Projects, Contact (`src/pages/`). Services are the client's real list (skills training, labour placements, rural & urban development, water purify & supply) — do not add others.
 - All client content (name, phone, email, address, WhatsApp, map URL, services, projects, images) lives in `src/data/site.js`. Edit there, not in pages.
 - Do not invent company history, years, certifications or project counts.
 - Map embed renders only when `site.mapEmbedUrl` is set.

@@ -7,6 +7,7 @@ import logo from '../assets/logo.webp'
 export const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About Us' },
+  { to: '/services', label: 'Our Services' },
   { to: '/projects', label: 'Our Projects' },
   { to: '/contact', label: 'Contact Us' },
 ]

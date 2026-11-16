@@ -12,6 +12,9 @@ export default function Footer() {
           <p className="text-sm leading-relaxed">
             Building quality homes through thoughtful design and reliable execution.
           </p>
+          <p className="font-serif text-lg italic text-gold">
+            “{site.motto}”
+          </p>
         </div>
         <div>
           <h2 className="mb-4 font-sans text-sm font-semibold uppercase tracking-widest text-white">Quick Links</h2>
@@ -24,7 +27,7 @@ export default function Footer() {
         <div>
           <h2 className="mb-4 font-sans text-sm font-semibold uppercase tracking-widest text-white">Services</h2>
           <ul className="space-y-2 text-sm">
-            {services.slice(0, 4).map((s) => <li key={s.title}>{s.title}</li>)}
+            {services.map((s) => <li key={s.title}><Link to="/services" className="transition-colors hover:text-gold">{s.title}</Link></li>)}
           </ul>
         </div>
         <div>

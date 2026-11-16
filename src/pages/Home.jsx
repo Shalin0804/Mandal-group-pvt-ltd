@@ -53,9 +53,12 @@ export default function Home() {
       {/* Services */}
       <section className="section bg-coal">
         <div className="container-x">
-          <SectionHeading eyebrow="Our Services" title="What we do" text="Complete residential construction services, from the first plan to the final finish." />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <SectionHeading eyebrow="Our Services" title="What we do" text={site.motto} />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {services.map((s) => <ServiceCard key={s.title} {...s} />)}
+          </div>
+          <div className="mt-12 text-center">
+            <Link to="/services" className="btn-dark">View All Services <ArrowRight size={18} /></Link>
           </div>
         </div>
       </section>

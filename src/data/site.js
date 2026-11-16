@@ -1,5 +1,5 @@
 // All client content lives here. Replace placeholders with real details.
-import { Home, KeyRound, PencilRuler, Hammer, Paintbrush, ClipboardCheck, ShieldCheck, Eye, CalendarClock, Users, Handshake, Award, HardHat, MessagesSquare } from 'lucide-react'
+import { GraduationCap, BriefcaseBusiness, Building2, Droplets, ShieldCheck, Eye, CalendarClock, Users, Handshake, Award, HardHat, MessagesSquare } from 'lucide-react'
 
 
 // Unsplash placeholder images. To use your own photos, drop them in
@@ -9,11 +9,12 @@ const img = (id, w = 1200) =>
 
 export const site = {
   name: 'Mandal Group',
-  legalName: 'Mandal Group Pvt. Ltd.',
+  legalName: 'Mandal Group Private Limited',
+  motto: 'Hamari Koshish, hamari mehnat, Safalta ki ek nayi suruat',
   tagline: 'Residential Construction',
-  phone: '+91 00000 00000', // TODO: client phone
-  email: 'info@example.com', // TODO: client email
-  whatsapp: '910000000000', // TODO: country code + number, digits only
+  phone: '+91 99320 08273',
+  email: 'mandalgroupstv0826@gmail.com',
+  whatsapp: '919932008273', // country code + number, digits only
   address: 'Office address to be updated', // TODO: client address
   // Paste the Google Maps embed URL (Share > Embed a map > src) once the address is final.
   mapEmbedUrl: '',
@@ -25,15 +26,43 @@ export const images = {
   aboutBanner: img('1541888946425-d81bb19240f5', 1920),
   projectsBanner: img('1600585154340-be6161a56a0c', 1920),
   contactBanner: img('1600607687939-ce8a6c25118c', 1920),
+  servicesBanner: img('1504307651254-35680f356dfd', 1920),
 }
 
+// Services as provided by the client. `details` shows on the Our Services page only.
 export const services = [
-  { icon: Home, title: 'Residential Construction', text: 'Independent homes and villas built with sound structure, quality materials and careful workmanship.' },
-  { icon: KeyRound, title: 'Turnkey Home Projects', text: 'One team handling your home from planning and approvals to construction and final handover.' },
-  { icon: PencilRuler, title: 'Planning & Design', text: 'Practical layouts and elevations that make the best use of your plot, budget and lifestyle.' },
-  { icon: Hammer, title: 'Renovation & Extension', text: 'Upgrades, additional floors and remodelling of existing homes with minimal disruption.' },
-  { icon: Paintbrush, title: 'Interior Finishing', text: 'Flooring, painting, carpentry and finishing work that gives your home a complete look.' },
-  { icon: ClipboardCheck, title: 'Project Management', text: 'Clear schedules, regular site updates and quality checks at every stage of the build.' },
+  {
+    icon: GraduationCap,
+    title: "Skills Development (Labour's Training)",
+    text: 'Practical training that helps workers build job-ready skills and grow their livelihoods.',
+    details: 'We train labourers in practical, on-the-job skills so they can work with confidence, earn better and take up skilled roles on construction and development projects.',
+    image: img('1621905251918-48416bd8575a', 900),
+    alt: 'Worker in a safety helmet carrying out skilled electrical work',
+  },
+  {
+    icon: BriefcaseBusiness,
+    title: "Skilled Labour's Placements",
+    text: 'Connecting trained, skilled workers with the projects and employers that need them.',
+    details: 'We connect trained and skilled workers with employers and projects that need them, helping workers find steady employment and helping projects find reliable manpower.',
+    image: img('1541888946425-d81bb19240f5', 900),
+    alt: 'Team of construction workers at a project site',
+  },
+  {
+    icon: Building2,
+    title: 'Rural and Urban Development',
+    text: 'Development work that improves infrastructure and living conditions in villages and cities.',
+    details: 'We take up development work in both rural and urban areas, contributing to better infrastructure, facilities and living conditions for the communities we serve.',
+    image: img('1477959858617-67f85cf4f1df', 900),
+    alt: 'Aerial view of a developed city',
+  },
+  {
+    icon: Droplets,
+    title: 'Water Purify and Supply',
+    text: 'Clean, purified drinking water supplied to homes, sites and communities.',
+    details: 'We provide purified water and its supply, making safe and clean drinking water available to households, work sites and communities.',
+    image: img('1548839140-29a749e1cf4d', 900),
+    alt: 'Clean water being poured into a glass',
+  },
 ]
 
 export const reasons = [
